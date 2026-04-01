@@ -3,30 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte / pré-formatado</h2>
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
-    <pre>
-        <code>
-num = int(input("Digite um número: "))
-if num % 2 == 0:
-    print(f"O número {num} é par.")
-else:
-    print(f"O número {num} é ímpar.")
-        </code>
-    </pre>
-    <h2>Citações simples</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo Loiane Groner em seu livro Estrutura de Dados e Algoritmos com JavaScript:</p>
-    <blockquote><q>As variáveis armazenam dados que podem ser definidos, atualizados erecuperados sempre que necessário. Os valores atribuídos a uma variável têm um tipo. Em JavaScript, os tipos disponíveis são: number (número), string, boolean (booleano), function (função) e object (objeto). Também temos undefined (indefinido) e null (nulo), junto com arrays, datas e expressões regulares.</q></blockquote>
-    <!-- Dentro da tag <blockquote> podemos incluir o cite="http://example.com" para referenciar de onde tirou a frase-->
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
-    <h2>Texto invertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo HTML e CSS.</bdo></p>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="i"> <!-- O type é opcional, mas pode ser usado para definir o tipo de numeração com 1, a, A, I e i (a para letras e i para romanos)-->
+        <li>Acordar</li> 
+        <li>Ligar para João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar pra casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+        <!-- O /li e /ol pata fechamento de tag virou opcional -->
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <ul type="circle"> <!-- O type é opcional, mas pode ser usado para definir o tipo de marcador com disc, circle e square (disc para círculo preenchido, circle para círculo vazio e square para quadrado)-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Juntando Listas</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+            <li>Python</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>PC</li>
+        <ul type="square">
+            <li>Riot</li>
+            <ul type="circle">
+                <li>League of Legends</li>
+                <li>TFT</li>
+                <li>Valorant</li>
+                <li>Legends of Runeterra</li>
+                <li>2XKO</li>
+            </ul>
+            <li>Fortnite</li>
+            <li>CS</li>
+            <li>Minecraft</li>
+        </ul>
+        <li>Playstation 2</li>
+        <ul type="square">
+            <li>Hércules</li>
+        </ul>
+        <li>Celular</li>
+        <ul type="square">
+            <li>Clash Royale</li>
+            <li>Clash of Clans</li>
+            <li>Merge Dragons</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para web</dd>
+    </dl>
 </body>
 </html>

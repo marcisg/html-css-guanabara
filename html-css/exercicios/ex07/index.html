@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Semântica</title>
+    <title>Formatação de Textos</title>
     <style>
-        body {
-            background-color: rgb(145, 106, 180);
+        mark{
+            background-color: rgb(127, 208, 255);
         }
-        
     </style>
-    <!-- A base do CSS hoj é Forma e Estilo -->
 </head>
 <body>
-    <p>Eu moro na <address>Rua Exemplo, 123</address></p>
-    <!-- A base do HTML hoj é Significado e Semântica -->
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag code&lt;b&gt; (não semântica)</p>
+    <p>Nessa frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica)</p>  
+    <h2>Itálico / Ênfase</h2>
+    <p>Nessa frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica)</p>
+    <p>Nessa frase temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p>
+    <p>E no outro parágrafo temos <mark style="background-color: rgb(127, 208, 255);">outro texto marcado</mark> no final</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando <small>um texto pequeno</small> e <big>um texto grande</big> nesse parágrafo</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado usando a tag &lt;del&gt;</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois usando a tag &lt;ins&gt;</p>
+    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 usando a tag &lt;sup&gt;</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O usando a tag &lt;sub&gt;</p>
 </body>
 </html>

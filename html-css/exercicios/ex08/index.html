@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de Textos</title>
-    <style>
-        mark{
-            background-color: rgb(127, 208, 255);
-        }
-    </style>
+    <title>Outras formatações</title>
 </head>
 <body>
-    <h1>Principais formatações</h1>
-    <h2>Negrito / Destaque</h2>
-    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag code&lt;b&gt; (não semântica)</p>
-    <p>Nessa frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica)</p>  
-    <h2>Itálico / Ênfase</h2>
-    <p>Nessa frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica)</p>
-    <p>Nessa frase temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica)</p>
-    <h2>Texto marcado</h2>
-    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p>
-    <p>E no outro parágrafo temos <mark style="background-color: rgb(127, 208, 255);">outro texto marcado</mark> no final</p>
-    <h2>Texto grande e pequeno</h2>
-    <p>Estamos criando <small>um texto pequeno</small> e <big>um texto grande</big> nesse parágrafo</p>
-    <h2>Texto deletado</h2>
-    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado usando a tag &lt;del&gt;</p>
-    <h2>Texto inserido</h2>
-    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois usando a tag &lt;ins&gt;</p>
-    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica)</p>
-    <h2>Texto sobrescrito</h2>
-    <p>Para inserir coisas do tipo x<sup>20</sup>+3 usando a tag &lt;sup&gt;</p>
-    <h2>Texto subscrito</h2>
-    <p>Para inserir coisas do tipo H<sub>2</sub>O usando a tag &lt;sub&gt;</p>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / pré-formatado</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <pre>
+        <code>
+num = int(input("Digite um número: "))
+if num % 2 == 0:
+    print(f"O número {num} é par.")
+else:
+    print(f"O número {num} é ímpar.")
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Loiane Groner em seu livro Estrutura de Dados e Algoritmos com JavaScript:</p>
+    <blockquote><q>As variáveis armazenam dados que podem ser definidos, atualizados erecuperados sempre que necessário. Os valores atribuídos a uma variável têm um tipo. Em JavaScript, os tipos disponíveis são: number (número), string, boolean (booleano), function (função) e object (objeto). Também temos undefined (indefinido) e null (nulo), junto com arrays, datas e expressões regulares.</q></blockquote>
+    <!-- Dentro da tag <blockquote> podemos incluir o cite="http://example.com" para referenciar de onde tirou a frase-->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo HTML e CSS.</bdo></p>
 </body>
 </html>
